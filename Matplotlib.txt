@@ -1,0 +1,50 @@
+matplotlib:Mostly used features..
+
+1.[Scatterplot is used to understand variations in data] plt.scatter(x,y,color='',marker='')
+alpha parameter is used to understand the intensity of dot plt.scatter(x,y,alpha=0.9,color='',marker='+')
+
+2.plt.plot(figsize=(4,5)),plt.plot(x,y,'--'),".",":"
+
+3.plt.subplot(1,2,1)
+
+4.plt.figure()
+
+5.plt.show()
+
+6.in order to rename the ranges :plt.xlim(1,10),plt.ylim(11,20)
+
+7.#how to make both axis equal in terms of spaces?
+plt.axis('equal')
+
+8.How to see number line in matplotlib?
+plt.grid()
+
+9.How to add titles in matplotlib?
+plt.title("This is my dataset")
+
+10.#Howe to provide xaxis and y-axis name?
+plt.xlabel('')
+plt.ylabel('')
+
+11.How to provide the labels on figures using matplotlib?
+plt.legend()
+
+12.How to make histogram plot using matplotlib?[#For continous data we can make histograms or distribution plot]
+plt.hist(data)[By default histogram bins will be 10 in number]
+plt.show()
+
+13.How to make histogram plot by specifically specifying the bins?
+plt.hist(data,bins=20)
+plt.hist(data,bins=20,histtype='step',color='red')
+
+14. Barplot is used for categorical data
+plt.bar(x,y,color='g')[Vertical representation of barplot]
+
+15.How to plot barplot horizontally?
+plt.barh(x,y,color='')
+
+16.3d plot in matplotlib?
+fig=plt.figure
+ax=fig.add_subplot(projection='3d')
+ax.scatter(x,y,z,color='red')
+ 
